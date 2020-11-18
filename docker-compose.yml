@@ -1,16 +1,27 @@
 version: '3'
 services:
   neo4j:
-    image: neo4j:3.5.23
+    image: graphbom/db
     hostname: Rhushikeshs-iMac.local
-    container_name: neo4j
+    container_name: graphbom-db
     ports:
       - "7474:7474"
       - "7687:7687"
-    volumes:
-      - ./plugins:/plugins
-      - ./conf:/config
     environment:
       - NEO4J_dbms_security_procedures_unrestricted=apoc.*,algo.*
+      - NEO4J_AUTH=neo4j/123
+  miroservices:
+    image: graphbom/micro
+    hostname: Rhushikeshs-iMac.local
+    container_name: graphbom-microservices
+    ports:
+      - "8080:8080"
+  frontend:
+    image: graphbom-ui
+    hostname: Rhushikeshs-iMac.local
+    container_name: graphbom-ui
+    ports:
+      - "4200:4200"
+
    
   

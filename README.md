@@ -1,4 +1,4 @@
-# graphbom-neo4j
+# Contribution 4 graphbom-neo4j
 
 # Build the docker image
 docker build . -t graphbom/db

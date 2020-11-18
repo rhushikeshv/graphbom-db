@@ -9,3 +9,10 @@ docker run -it --rm -p7474:7474 -p7687:7687 --env NEO4J_AUTH=neo4j/123 graphbom/
 ![Alt text](neo4j-db.png)
 
 # Contribution 5 Docker compose (compose the front end, backend and database as services using docker)
+![Alt text](docker-compose.png)
+
+# Contribution 4 : Entire application deployed using docker !!!
+
+# Micro services architecuture composed using docker
+
+![Alt text]((microservices.png)

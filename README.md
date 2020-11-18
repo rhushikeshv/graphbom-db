@@ -15,4 +15,4 @@ docker run -it --rm -p7474:7474 -p7687:7687 --env NEO4J_AUTH=neo4j/123 graphbom/
 
 # Micro services architecuture composed using docker
 
-![Alt text]((microservices.png)
+![Alt text](microservices.png)
